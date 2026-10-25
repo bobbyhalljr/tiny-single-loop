@@ -14,3 +14,5 @@ npx tsx loop.ts
 ```
 
 MIT, by Bobby Hall Jr.
+
+Read the write-up on Dev.to: https://dev.to/bobbyhalljr/anthropic-says-fold-your-subagents-lets-build-a-tiny-single-agent-loop-in-typescript-1ba8
