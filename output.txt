@@ -1,0 +1,25 @@
+tiny-single-loop demo (fake model, fake tools)
+
+all skills + tools up front:  ~1077 tok
+names + descriptions only:    ~55 tok
+
+run 1 (no write approval)
+  load_skill(refunds)  +250 tok
+  tool_search("order refund credit")  -> lookup_order, issue_refund, issue_credit  +180 tok
+  order 1042: $48.00, placed 12 days ago
+  GATE issue_refund needs approval
+  context at end: ~496 tok, skills loaded: refunds
+
+run 2 (refund approved)
+  load_skill(refunds)  +250 tok
+  tool_search("order refund credit")  -> lookup_order, issue_refund, issue_credit  +180 tok
+  order 1042: $48.00, placed 12 days ago
+  refunded order 1042
+  context at end: ~496 tok, skills loaded: refunds
+
+run 3 (turn budget 2)
+  load_skill(refunds)  +250 tok
+  tool_search("order refund credit")  -> lookup_order, issue_refund, issue_credit  +180 tok
+  STOP turn budget
+  context at end: ~496 tok, skills loaded: refunds
+

@@ -1,0 +1,10 @@
+{
+  "name": "tiny-single-loop",
+  "version": "1.0.0",
+  "description": "Tiny TypeScript single agent loop with progressive disclosure. Skills and tools start as one-line descriptions, load on demand, and run under harness limits: a turn budget and a write gate. Fake model. No API key. No network.",
+  "main": "loop.ts",
+  "scripts": { "start": "tsx loop.ts", "typecheck": "tsc --noEmit" },
+  "author": "Bobby Hall Jr",
+  "license": "MIT",
+  "devDependencies": { "@types/node": "^22.10.0", "tsx": "^4.19.2", "typescript": "^5.7.2" }
+}
